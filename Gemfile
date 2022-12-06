@@ -28,3 +28,5 @@ group :development do
   # gem "spring"
 end
 
+  # adding gem for serializer
+gem 'active_model_serializers'

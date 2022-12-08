@@ -2,7 +2,7 @@ class SessionsController < ApplicationController
       # handles login feature
       def create 
         consumer = Consumer.find_by(email_address: params[:email_address])
-        if (params[:password])
+        if consumer&.authenticate(params[:password])
             session[:consumer_id] = consumer.id
             render json: consumer, status: :created
         else

@@ -1,3 +1,3 @@
 class ConsumerSerializer < ActiveModel::Serializer
-  attributes :id
+  attributes :id, :name, :email_address
 end

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_12_06_105303) do
+ActiveRecord::Schema[7.0].define(version: 2022_12_08_095812) do
   create_table "carts", force: :cascade do |t|
     t.integer "consumer_id"
     t.integer "product_id"
@@ -29,6 +29,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_06_105303) do
     t.string "email_address"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "password_digest"
   end
 
   create_table "products", force: :cascade do |t|

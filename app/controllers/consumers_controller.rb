@@ -6,23 +6,14 @@ class ConsumersController < ApplicationController
 
     # handles login
     def create 
-    consumer = Consumer.create(consumer_params)
-        if consumer.valid?
-            session[:user_id] = consumer.id
-            render json: consumer, status: :created
-        else
-            render json: { errors: consumer.errors.full_messages }, status: :unprocessable_entity
-        end
+        consumer = Consumer.create(consumer_params)
+        session[:consumer_id] = consumer.id
+        render json: consumer, status: :created
     end 
 
       # handle auto login 
       def show 
-        consumer = Consumer.find_by(id: session[:consumer_id])
-        if user
-            render json: consumer, status: :created
-        else
-            render json: { error: ["Not authorized"] }, status: :unauthorized
-        end
+       render json: @current_user
     end 
 
     private 

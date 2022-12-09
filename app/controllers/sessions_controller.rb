@@ -1,4 +1,5 @@
 class SessionsController < ApplicationController
+    skip_before_acion :authorize, only: :create
       # handles login feature
       def create 
         consumer = Consumer.find_by(email_address: params[:email_address])

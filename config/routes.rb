@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   resources :carts
   resources :consumers
-  resources :products
+  resources :products 
   resources :categories
 
   get '/home', to: "sessions#create"

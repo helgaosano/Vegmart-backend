@@ -1,24 +1,20 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# VegMart 
+### Author: Tania Osano
 
-Things you may want to cover:
+Vegmart is an organic groceries web application which helps you take care of your nutrition.
+Our consumers are provided with natural organic products, with fresh and fabulous flavour. It gives
+consumers 100% fresh products and saves market time.
 
-* Ruby version
+## Login credentials
 
-* System dependencies
+{
+    email:  "caren@gmail.com",
+    password : "password"
+}
 
-* Configuration
+## Endpoints
 
-* Database creation
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Frontend Repository: https://github.com/helgaosano/green-organics

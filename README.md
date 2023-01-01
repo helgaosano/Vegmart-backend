@@ -17,4 +17,4 @@ consumers 100% fresh products and saves market time.
 ## Endpoints
 
 
-* Frontend Repository: https://github.com/helgaosano/green-organics
+* Frontend Repository: https://github.com/helgaosano/online-vegmart
